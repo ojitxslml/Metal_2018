@@ -1,0 +1,608 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Alternative Metal</title>
+    <link rel="icon" type="image/jpg" href="IMG/icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Rubik" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(IMG/purple.jpg);
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .transparent {
+            background: rgba(1, 1, 1, 0.5);
+            padding-bottom: 35px;
+        }
+
+        .footer {
+            background-color: black;
+            background: rgb(1, 1, 1, 06);
+            padding-top: 13px;
+            padding-right: 20px;
+            padding-bottom: 13px;
+            padding-left: 20px;
+        }
+
+        #texto {
+            color: #ffffff;
+
+        }
+
+        .navbar {
+            background-color: #000000;
+        }
+
+        .navbar .navbar-brand {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-brand:hover,
+        .navbar .navbar-brand:focus {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-text {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-text a {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-text a:hover,
+        .navbar .navbar-text a:focus {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color: #ffffff;
+            border-radius: .25rem;
+            margin: 0 0.25em;
+        }
+
+        .navbar .navbar-nav .nav-link:not(.disabled):hover,
+        .navbar .navbar-nav .nav-link:not(.disabled):focus {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-nav .dropdown-menu {
+            background-color: #000000;
+            border-color: #4e0252;
+        }
+
+        .navbar .navbar-nav .dropdown-menu .dropdown-item {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+        .navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+        .navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+            color: #ffffff;
+            background-color: #4e0252;
+        }
+
+        .navbar .navbar-nav .dropdown-menu .dropdown-divider {
+            border-top-color: #4e0252;
+        }
+
+        .navbar .navbar-nav .nav-item.active .nav-link,
+        .navbar .navbar-nav .nav-item.active .nav-link:hover,
+        .navbar .navbar-nav .nav-item.active .nav-link:focus,
+        .navbar .navbar-nav .nav-item.show .nav-link,
+        .navbar .navbar-nav .nav-item.show .nav-link:hover,
+        .navbar .navbar-nav .nav-item.show .nav-link:focus {
+            color: #ffffff;
+            background-color: #4e0252;
+        }
+
+        .navbar .navbar-toggle {
+            border-color: #4e0252;
+        }
+
+        .navbar .navbar-toggle:hover,
+        .navbar .navbar-toggle:focus {
+            background-color: #4e0252;
+        }
+
+        .navbar .navbar-toggle .navbar-toggler-icon {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-collapse,
+        .navbar .navbar-form {
+            border-color: #ffffff;
+        }
+
+        .navbar .navbar-link {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-link:hover {
+            color: #ffffff;
+        }
+
+        @media (max-width: 575px) {
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        @media (max-width: 1199px) {
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+            color: #ffffff;
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+            color: #ffffff;
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+            color: #ffffff;
+            background-color: #4e0252;
+        }
+
+        .special-card {
+            background-color: rgba(245, 245, 245, 1);
+            opacity: .4;
+        }
+
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: #4e0252;
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+            /* Add a dark-grey background on hover */
+        }
+
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Subir</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-">
+        <a class="navbar-brand" href="index.html">
+        <img src="IMG/guitar2.png" height="40" width="70">
+    </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #4e0252; border-color: #4e0252; color: #ffffff; ">
+    <span class="navbar-toggler-icon" ></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="index.html">Inicio </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="HM.html">Heavy Metal </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="TM.html">Thrash Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="DM.html">Death Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="PM.html">Power Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="BM.html">Black Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="PrM.html">Progressive Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="SM.html">Symphonic Metal</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Josefin Sans', sans-serif">
+          Más
+        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="NM.html">Nu Metal</a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="MDM.html">Melodic Death Metal</a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="IM.html">Industrial Metal</a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="MC.html">Metal Core</a>
+                        <a class="dropdown-item active" style="font-family: 'Josefin Sans', sans-serif" href="AM.html">Alternative Metal<span class="sr-only">(current)</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Festivales.html" style="font-family: 'Josefin Sans', sans-serif">Festivales</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Acerca.html" style="font-family: 'Josefin Sans', sans-serif">Acerca De</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#LoginAcceder" style="font-family: 'Josefin Sans', sans-serif; background-color: #4e0252; border-color: #4e0252">
+  Login
+</button>&nbsp;
+                </li>
+                <li class="nav-item active">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#LoginRegistro" style="font-family: 'Josefin Sans', sans-serif; background-color: #4e0252; border-color: #4e0252">
+  Registrarse
+</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="LoginAcceder" tabindex="-1" role="dialog" aria-labelledby="logintitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logintitle">Acceder</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">No compartiremos tu correo con nadie!.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" style="background-color: #4e0252; border-color: #4e0252">Entrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="LoginRegistro" tabindex="-1" role="dialog" aria-labelledby="logintitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logintitle">Registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+       <a href="#"> Acepto los terminos del servicio</a>
+      </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" style="background-color: #4e0252; border-color: #4e0252">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="transparent container">
+        <br/>
+        <p class="h1" id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Alternative Metal</p>
+        <br/>
+    </div>
+    <div class="transparent container">
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <p id="texto" class="h4" style="font-family: 'Rubik', sans-serif;">
+                    El metal alternativo es un subgénero del heavy metal que posee varias características del rock alternativo y del grunge. Alcanzó popularidad en la década de los 90. La categorización de este género no es muy clara, pero se utiliza generalmente en bandas que tocan heavy metal fusionado con otros ritmos y tendencias.
+                </p><br/> <br/>
+            </div>
+            <div class="col-md-12 col-12">
+                <h3 id="texto">Video: Rage Against The Machine - Killing In The Name<br/></h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-12 embed-responsive embed-responsive-16by9">
+                <h4 class="text-center img-fluid"><iframe width="560" height="315" src="https://www.youtube.com/embed/T8XiUrpn6u4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></h4>
+            </div>
+            <div class="col-md-12 col-12" style="margin-top: 35px; margin-bottom: 15px; text-align: center;">
+                <h1 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Bandas Conocidas: </h1>
+            </div>
+        </div>
+        <!------Cards------->
+        <div class="row justify-content-between">
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/rage-against-the-machine-1.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Rage Against The Machine</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Es un grupo musical estadounidense de Metal Alternativo fundado en el año 1991.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gs" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="gs" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Rage Against The Machine</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/rage-against-the-machine-1.jpg" height="328px">Su estilo característico es una sólida fusión de hip hop, funk, y heavy metal. Los solos de guitarra de Tom Morello se recalcan por sus prominentes usos de pedales y efectos, y sobresalen sus emulaciones de los scratchs y otros efectos de los DJ de hip hop. El cantante, Zack de la Rocha, participó en grupos de punk y hardcore antes de volverse un apasionado de las rimas del rap: de ahí viene su estilo agresivo de rapear y los fuertes gritos que incluye en algunas canciones. Se aprecia también un pequeño toque de jazz por parte del bajista Tim Commerford, que perteneció a un grupo de ese estilo a mediados de los años 1980; finalmente, la batería de Brad Wilk está cargada de ritmos funk especialmente contundentes. Este estilo de fusión fue más tarde imitado por otras bandas.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/faith.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Faith No More</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif; ">Es una banda estadounidense de metal alternativo formada en California de 1982.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#g" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="g" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Faith No More</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/faith.jpg" height="328px">Faith No More son a menudo considerados como una de las bandas más importantes del rock alternativo de los 90'. No obstante, cuando comenzaron en 1982 como Faith No Man, su estilo era cercano al post-punk/pre-goth. Después de la publicación de su primer álbum "We Care a Lot", fueron muy comparados con bandas como Public Image Limited, y poco a poco fueron incorporando elementos del punk y del heavy metal (influenciado por el guitarrista Jim Martin) y de otros géneros como el funk y el hip hop, así a fines de los 80, con la publicación de su exitoso álbum "The Real Thing", eran comúnmente etiquetados como una banda de funk-rap metal29 y también eran muy comparados con bandas como Red Hot Chili Peppers.
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/primus.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Primus</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Es una banda de rock alternativo1 estadounidense formado en 1991.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Rhapsody" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="Rhapsody" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Primus</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/primus.jpg" height="328px">Primus originalmente se formó en 1984 con Claypool y el guitarrista Todd Huth, a quienes luego se les unió Jay Lane, pero estos últimos dos abandonaron la banda en 1988. Junto con LaLonde y Alexander, Primus grabó un álbum en vivo titulado Suck on This en 1989, seguido de cuatro álbumes de estudio: Frizzle Fry, Sailing the Seas of Cheese, Pork Soda y Tales from the Punchbowl. Alexander dejó la banda en 1996, siendo reemplazado por Bryan "Brain" Mantia. Junto a él, Primus fue el grupo encargado de la grabación de la canción original de la serie televisiva South Park y además dos nuevos álbumes, Brown Album y Antipop, antes de declarar un hiato en el año 2000.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/></div>
+        <div class="row justify-content-around" style="margin-top: 30px">
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/incubus.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Incubus</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Incubus es una banda de rock alternativo estadounidense formada en 1991.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sabaton" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="sabaton" tabindex="-1 " role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Incubus</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/incubus.jpg" height="328px">ncubus se forma en un garaje de Calabasas, California en enero de 1991. Empezaron tocando en pequeños clubes y fiestas, para saltar a telonear a todo un elenco de bandas consagradas de Hollywood como Poison. En el año 1990 Jose Pasillas (Percusión) conoce a Mike Einziger (guitarrista) quien pasaba la mayor parte de su tiempo tocando la guitarra y a Alex Katunich (bajo) quien había participado en una banda de jazz de la cual lo expulsan por no saber leer partituras. Los tres deciden juntarse a tocar por diversión covers de Megadeth y Metallica. En muy poco tiempo logran hacerse conocidos en el barrio, pero, faltaba un vocalista. Es por ello que logran convencer a Brandon Boyd, quien era amigo desde primaria de Mike Einziger y que tenía un gran talento vocal
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/deftones.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Deftones</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Es una banda estadounidense formada en California, en el año 1988.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#strat" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="strat" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Deftones</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/deftones.jpg" height="328px">Sus integrantes son Chino Moreno (vocalista), Stephen Carpenter (guitarrista), Abe Cunningham (baterista), Sergio Vega (bajista) y Frank Delgado (samplers). El bajista original de la banda era Chi Cheng, quien quedó en coma después de un accidente en el 2008, y murió en el 2013. Desde su formación, la banda ha lanzado ocho álbumes de estudio, dos EP, un álbum recopilatorio y once sencillos, además de un box set que incluye todos sus álbumes. La banda cuenta con un disco de oro y tres discos de platino.
+                            </div>
+                            <div class="modal-footer ">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/tool1.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Tool</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Tool es una banda estadounidense de metal progresivo surgida en 1990.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#morbid" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="morbid" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Tool</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/tool1.jpg" height="328px"> Ha vendido más de trece millones de discos en todo el mundo y ha ganado tres premios Grammy hasta la fecha; ha encabezado giras y prestigiosos festivales y ha producido exitosos álbumes que alcanzaron grandes niveles de ventas gracias a su estatus de culto en el mundo de la música. Está formada por el baterista Danny Carey, el guitarrista Adam Jones, el vocalista Maynard James Keenan y el bajista Justin Chancellor, que sustituyó a Paul D'Amour en 1995.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+        </div>
+
+    </div>
+    <div class="footer">
+        <h5 class="text" style="text-align: center; color: grey;">@Juan Pablo Urra 2018</h5>
+        <h6 style="text-align: center"><a href="https://twitter.com/O_J_I_T_O_S_HD" target="_blank">Twitter</a></h6>
+        <h6 class="text" style="text-align: center; color: grey; ">Contacto: jp.urra42@gmail.com</h6>
+    </div>
+</body>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+</script>
+
+</html>

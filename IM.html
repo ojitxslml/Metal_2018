@@ -1,0 +1,608 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Industrial Metal</title>
+    <link rel="icon" type="image/jpg" href="IMG/icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Rubik" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(IMG/purple.jpg);
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .transparent {
+            background: rgba(1, 1, 1, 0.5);
+            padding-bottom: 35px;
+        }
+
+        .footer {
+            background-color: black;
+            background: rgb(1, 1, 1, 06);
+            padding-top: 13px;
+            padding-right: 20px;
+            padding-bottom: 13px;
+            padding-left: 20px;
+        }
+
+        #texto {
+            color: #ffffff;
+
+        }
+
+        .navbar {
+            background-color: #000000;
+        }
+
+        .navbar .navbar-brand {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-brand:hover,
+        .navbar .navbar-brand:focus {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-text {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-text a {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-text a:hover,
+        .navbar .navbar-text a:focus {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color: #ffffff;
+            border-radius: .25rem;
+            margin: 0 0.25em;
+        }
+
+        .navbar .navbar-nav .nav-link:not(.disabled):hover,
+        .navbar .navbar-nav .nav-link:not(.disabled):focus {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-nav .dropdown-menu {
+            background-color: #000000;
+            border-color: #4e0252;
+        }
+
+        .navbar .navbar-nav .dropdown-menu .dropdown-item {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+        .navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+        .navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+            color: #ffffff;
+            background-color: #4e0252;
+        }
+
+        .navbar .navbar-nav .dropdown-menu .dropdown-divider {
+            border-top-color: #4e0252;
+        }
+
+        .navbar .navbar-nav .nav-item.active .nav-link,
+        .navbar .navbar-nav .nav-item.active .nav-link:hover,
+        .navbar .navbar-nav .nav-item.active .nav-link:focus,
+        .navbar .navbar-nav .nav-item.show .nav-link,
+        .navbar .navbar-nav .nav-item.show .nav-link:hover,
+        .navbar .navbar-nav .nav-item.show .nav-link:focus {
+            color: #ffffff;
+            background-color: #4e0252;
+        }
+
+        .navbar .navbar-toggle {
+            border-color: #4e0252;
+        }
+
+        .navbar .navbar-toggle:hover,
+        .navbar .navbar-toggle:focus {
+            background-color: #4e0252;
+        }
+
+        .navbar .navbar-toggle .navbar-toggler-icon {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-collapse,
+        .navbar .navbar-form {
+            border-color: #ffffff;
+        }
+
+        .navbar .navbar-link {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-link:hover {
+            color: #ffffff;
+        }
+
+        @media (max-width: 575px) {
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        @media (max-width: 1199px) {
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+            color: #ffffff;
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+            color: #ffffff;
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+            color: #ffffff;
+            background-color: #4e0252;
+        }
+
+        .special-card {
+            background-color: rgba(245, 245, 245, 1);
+            opacity: .4;
+        }
+
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: #4e0252;
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+            /* Add a dark-grey background on hover */
+        }
+
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Subir</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-">
+        <a class="navbar-brand" href="index.html">
+        <img src="IMG/guitar2.png" height="40" width="70">
+    </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #4e0252; border-color: #4e0252; color: #ffffff; ">
+    <span class="navbar-toggler-icon" ></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="index.html">Inicio </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="HM.html">Heavy Metal </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="TM.html">Thrash Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="DM.html">Death Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="PM.html">Power Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="BM.html">Black Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="PrM.html">Progressive Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="SM.html">Symphonic Metal</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Josefin Sans', sans-serif">
+          Más
+        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="NM.html">Nu Metal</a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="MDM.html">Melodic Death Metal</a>
+                        <a class="dropdown-item active" style="font-family: 'Josefin Sans', sans-serif" href="IM.html">Industrial Metal<span class="sr-only">(current)</span></a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="MC.html">Metal Core</a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="AM.html">Alternative Metal</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Festivales.html" style="font-family: 'Josefin Sans', sans-serif">Festivales</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Acerca.html" style="font-family: 'Josefin Sans', sans-serif">Acerca De</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#LoginAcceder" style="font-family: 'Josefin Sans', sans-serif; background-color: #4e0252; border-color: #4e0252">
+  Login
+</button>&nbsp;
+                </li>
+                <li class="nav-item active">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#LoginRegistro" style="font-family: 'Josefin Sans', sans-serif; background-color: #4e0252; border-color: #4e0252">
+  Registrarse
+</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="LoginAcceder" tabindex="-1" role="dialog" aria-labelledby="logintitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logintitle">Acceder</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">No compartiremos tu correo con nadie!.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" style="background-color: #4e0252; border-color: #4e0252">Entrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="LoginRegistro" tabindex="-1" role="dialog" aria-labelledby="logintitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logintitle">Registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+       <a href="#"> Acepto los terminos del servicio</a>
+      </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" style="background-color: #4e0252; border-color: #4e0252">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="transparent container">
+        <br/>
+        <p class="h1" id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Industrial Metal</p>
+        <br/>
+    </div>
+    <div class="transparent container">
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <p id="texto" class="h4" style="font-family: 'Rubik', sans-serif;">
+                    El metal industrial es un género musical que toma elementos de la música industrial y del metal. La música industrial usualmente está centrada en riffs de guitarra (que están afinadas muy graves), sintetizadores/secuenciadores muy distorsionados, y no posee un estilo vocal definido, puesto que todos los cantantes de este género cantan de una manera personal, debido a las distintas influencias de metal que estos poseen. En algunos casos, se utilizan baterías programadas, y en otros casos, solamente baterías convencionales. También se usan sonidos de películas o series de televisión.
+                </p><br/> <br/>
+            </div>
+            <div class="col-md-12 col-12">
+                <h3 id="texto">Video: Rammstein - Du Hast<br/></h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-12 embed-responsive embed-responsive-16by9">
+                <h4 class="text-center img-fluid"><iframe width="560" height="315" src="https://www.youtube.com/embed/U5HAEzEk8QM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></h4>
+            </div>
+            <div class="col-md-12 col-12" style="margin-top: 35px; margin-bottom: 15px; text-align: center;">
+                <h1 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Bandas Conocidas: </h1>
+            </div>
+        </div>
+        <!------Cards------->
+        <div class="row justify-content-between">
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/rammstein.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Rammstein</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Rammstein es una banda alemana de metal industrial formada en 1994.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gs" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="gs" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Rammstein</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/rammstein.jpg" height="328px">Sus canciones están escritas casi exclusivamente en alemán aunque se pueden encontrar en inglés, francés e incluso español; y han vendido más de 50 millones de copias en todo el mundo. Entre otros reconocimientos, han sido nominados en dos ediciones de los premios Grammy en la categoría de mejor interpretación de metal: en 1999 con el tema «Du hast» (del álbum Sehnsucht) y en 2006 con «Mein Teil» (del álbum Reise, Reise).Han lanzado al mercado un total de seis álbumes de estudio y cuatro en directo, así como cinco DVD; toda su discografía se encuentra disponible en el catálogo de la multinacional discográfica Universal Music.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/Nine-Inch-Nails.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Nine Inch Nails</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif; ">Nine Inch Nails es una banda estadounidense de rock industrial fundada en 1988.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#g" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="g" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Nine Inch Nails</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/Nine-Inch-Nails.jpg" height="328px">Los seguidores de la música underground acogieron muy bien a Nine Inch Nails en sus primeros años. Fechas en las que produjeron varios álbumes altamente influyentes que tuvieron gran acogida; muchas de las canciones de Nine Inch Nails se convirtieron en éxitos en los años 1990, dos de ellas ganaron Premios Grammy, y en total han vendido más de veinte millones de álbumes en el mundo, de los que diez y medio han sido solo en Estados Unidos.
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/fearfa.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Fear Factory</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Fear Factory es una banda estadounidense de metal industrial, surgida en 1989.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Rhapsody" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="Rhapsody" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Fear Factory</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/fearfa.jpg" height="328px">A través del paso de los años el sonido de la banda ha cambiado mucho, lo que generó varias peleas y discusiones entre los admiradores, ya que en todos sus álbumes han experimentado distintos géneros del metal extremo y alternativo, como la combinación de los estilos death metal, groove metal, thrash metal, industrial metal y nu metal. El sonido resultante de las combinaciones ha demostrado ser enormemente influyente en la escena del metal a mediados de los años 90 y en adelante.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/></div>
+        <div class="row justify-content-around" style="margin-top: 30px">
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/marilyn.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Marilyn Manson</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Es una banda estadounidense formada en el año 1989.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sabaton" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="sabaton" tabindex="-1 " role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Marilyn Manson</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/marilyn.jpg" height="328px"> En 1996 firmaron con el sello Interscope Records y alcanzaron el éxito comercial al poner a la venta su segundo álbum de estudio, titulado Antichrist Superstar. Similar a la temática del disco, la gira en promoción recibió duras críticas por su mensaje anti-religioso y derivó en varias protestas a la salida de sus conciertos. La polémica llegó a su clímax en 1999, cuando la banda fue acusada de haber incitado a que dos alumnos llevaran a cabo una masacre en una escuela de Columbine. Sin embargo, aunque su supuesta influencia se desmintió, decidieron alejarse de los escenarios hasta el año 2000, cuando regresaron con el disco Holy Wood.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/ministry.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Ministry</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Ministry es una banda estadounidense de metal industrial fundada en 1981. </p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#strat" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="strat" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ministry</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/ministry.jpg" height="328px">En sus inicios la agrupación era una fusión de los géneros new wave y synthpop, cambiando de estilo a mediados de la década de 1980 para convertirse en una de las bandas pioneras dentro del subgénero del metal industrial. En 1992 lograron reconocimiento mundial con el lanzamiento del álbum Psalm 69: The Way to Succeed and the Way to Suck Eggs, que fue disco de platino y llegó a estar dentro de las principales listas de éxitos en varios países. Fueron pioneros en mezclar música electrónica con un alto contenido de guitarras y punk rock.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/hanzel.jpeg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Hanzel und Gretyl</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Hanzel und Gretyl, es una banda Estadounidense que fue banda en 1993. </p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#morbid" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="morbid" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Hanzel und Gretyl</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/hanzel.jpeg" height="328px">En 1994, grabaron un demo llamado Kindermuzik, y firmaron contrato con Energy Records, una discográfica de Suecia donde grabaron bandas como Elegant Machinery (banda sueca de Synthpop) o Pouppée Fabrikk (banda sueca de EBM). Grabaron su primer álbum, Ausgeflippt, en 1995, el cual recibió muy buenas críticas. En 1997, lanzaron su segundo álbum, Transmissions From Uranus, que también fue muy bien recibido por parte de los críticos y ayudó a la banda a intentar seguir desarrollando un sonido propio.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+        </div>
+
+    </div>
+    <div class="footer">
+        <h5 class="text" style="text-align: center; color: grey;">@Juan Pablo Urra 2018</h5>
+        <h6 style="text-align: center"><a href="https://twitter.com/O_J_I_T_O_S_HD" target="_blank">Twitter</a></h6>
+        <h6 class="text" style="text-align: center; color: grey; ">Contacto: jp.urra42@gmail.com</h6>
+    </div>
+</body>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+</script>
+
+</html>

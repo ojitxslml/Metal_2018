@@ -1,0 +1,610 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Heavy Metal</title>
+    <link rel="icon" type="image/jpg" href="IMG/icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Rubik" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(IMG/purple.jpg);
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .transparent {
+            background: rgba(1, 1, 1, 0.5);
+            padding-bottom: 35px;
+        }
+
+        .footer {
+            background-color: black;
+            background: rgb(1, 1, 1, 06);
+            padding-top: 13px;
+            padding-right: 20px;
+            padding-bottom: 13px;
+            padding-left: 20px;
+        }
+
+        #texto {
+            color: #ffffff;
+
+        }
+
+        .navbar {
+            background-color: #000000;
+        }
+
+        .navbar .navbar-brand {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-brand:hover,
+        .navbar .navbar-brand:focus {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-text {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-text a {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-text a:hover,
+        .navbar .navbar-text a:focus {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color: #ffffff;
+            border-radius: .25rem;
+            margin: 0 0.25em;
+        }
+
+        .navbar .navbar-nav .nav-link:not(.disabled):hover,
+        .navbar .navbar-nav .nav-link:not(.disabled):focus {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-nav .dropdown-menu {
+            background-color: #000000;
+            border-color: #4e0252;
+        }
+
+        .navbar .navbar-nav .dropdown-menu .dropdown-item {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+        .navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+        .navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+            color: #ffffff;
+            background-color: #4e0252;
+        }
+
+        .navbar .navbar-nav .dropdown-menu .dropdown-divider {
+            border-top-color: #4e0252;
+        }
+
+        .navbar .navbar-nav .nav-item.active .nav-link,
+        .navbar .navbar-nav .nav-item.active .nav-link:hover,
+        .navbar .navbar-nav .nav-item.active .nav-link:focus,
+        .navbar .navbar-nav .nav-item.show .nav-link,
+        .navbar .navbar-nav .nav-item.show .nav-link:hover,
+        .navbar .navbar-nav .nav-item.show .nav-link:focus {
+            color: #ffffff;
+            background-color: #4e0252;
+        }
+
+        .navbar .navbar-toggle {
+            border-color: #4e0252;
+        }
+
+        .navbar .navbar-toggle:hover,
+        .navbar .navbar-toggle:focus {
+            background-color: #4e0252;
+        }
+
+        .navbar .navbar-toggle .navbar-toggler-icon {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-collapse,
+        .navbar .navbar-form {
+            border-color: #ffffff;
+        }
+
+        .navbar .navbar-link {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-link:hover {
+            color: #ffffff;
+        }
+
+        @media (max-width: 575px) {
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        @media (max-width: 1199px) {
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+            color: #ffffff;
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+            color: #ffffff;
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+            color: #ffffff;
+            background-color: #4e0252;
+        }
+
+        .special-card {
+            background-color: rgba(245, 245, 245, 1);
+            opacity: .4;
+        }
+
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: #4e0252;
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+            /* Add a dark-grey background on hover */
+        }
+
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Subir</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-">
+        <a class="navbar-brand" href="index.html">
+        <img src="IMG/guitar2.png" height="40" width="70">
+    </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #4e0252; border-color: #4e0252; color: #ffffff; ">
+    <span class="navbar-toggler-icon" ></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="index.html">Inicio </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="HM.html">Heavy Metal<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="TM.html">Thrash Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="DM.html">Death Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="PM.html">Power Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="BM.html">Black Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="PrM.html">Progressive Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="SM.html">Symphonic Metal</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Josefin Sans', sans-serif">
+          Más
+        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="NM.html">Nu Metal</a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="MDM.html">Melodic Death Metal</a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="IM.html">Industrial Metal</a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="MC.html">Metal Core</a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="AM.html">Alternative Metal</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Festivales.html" style="font-family: 'Josefin Sans', sans-serif">Festivales</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Acerca.html" style="font-family: 'Josefin Sans', sans-serif">Acerca De</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#LoginAcceder" style="font-family: 'Josefin Sans', sans-serif; background-color: #4e0252; border-color: #4e0252">
+  Login
+</button>&nbsp;
+                </li>
+                <li class="nav-item active">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#LoginRegistro" style="font-family: 'Josefin Sans', sans-serif; background-color: #4e0252; border-color: #4e0252">
+  Registrarse
+</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="LoginAcceder" tabindex="-1" role="dialog" aria-labelledby="logintitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logintitle">Acceder</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">No compartiremos tu correo con nadie!.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" style="background-color: #4e0252; border-color: #4e0252">Entrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="LoginRegistro" tabindex="-1" role="dialog" aria-labelledby="logintitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logintitle">Registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+       <a href="#"> Acepto los terminos del servicio</a>
+      </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" style="background-color: #4e0252; border-color: #4e0252">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="transparent container">
+        <br/>
+        <p class="h1" id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Heavy Metal</p>
+        <br/>
+    </div>
+    <div class="transparent container">
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <p id="texto" class="h4" style="font-family: 'Rubik', sans-serif;">
+                    El heavy metal se caracterizó por poseer guitarras fuertes y distorsionadas, junto a ritmos enfáticos. Los sonidos del bajo y la batería son más densos de lo habitual y las voces, generalmente, agudas. Con el pasar de los años y con el surgimiento de sus subgéneros dichas características se enfatizaron, alteraron u omitieron, e incluso en ciertas ocasiones se agregaron nuevos atributos. Según el periodista Jon Pareles de New York Times: «En la taxonomía de la música popular, el heavy metal es la mayor subespecie del hard rock. Eso si, con menos síncopa, menos blues, más talento para el espectáculo y fuerza más bruta». La típica formación de una banda consta de un baterista, un bajista, un guitarrista líder, un guitarrista rítmico y un cantante que en ocasiones puede ser instrumentista. También puede incluir a un teclista para engrosar el sonido en los conciertos en vivo o en las producciones de estudio, sin que este sea necesariamente un miembro activo de la agrupación.
+                </p><br/> <br/>
+            </div>
+            <div class="col-md-12 col-12">
+                <h3 id="texto">Video: Iron Maiden - Hallowed Be Thy Name (Live)<br/></h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-12 embed-responsive embed-responsive-16by9">
+                <h4 class="text-center img-fluid"><iframe width="560" height="315" src="https://www.youtube.com/embed/G_5VQMeYtMQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></h4>
+            </div>
+            <div class="col-md-12 col-12" style="margin-top: 35px; margin-bottom: 15px; text-align: center;">
+                <h1 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Bandas Conocidas: </h1>
+            </div>
+        </div>
+        <!------Cards------->
+        <div class="row justify-content-between">
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/BlackSabbath.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Black Sabbath</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Fue una banda británica de heavy metal formada en 1968 en Birmingham, Reino Unido.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#BS" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="BS" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Black Sabbath</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/BlackSabbath.jpg" height="328px">Influenciados por la música de Blue Cheer, Cream, Vanilla Fudge, La agrupación incorporó letras sobre ocultismo y terror con guitarras afinadas de modo más grave y consiguió varios discos de oro y platino en la década de 1970. Son los pioneros del Heavy metal junto a otros grupos contemporáneos como Deep Purple, entre otros. Al ser una de las primeras y más influyentes bandas de heavy metal de todos los tiempos, Black Sabbath ayudó a desarrollar el género con publicaciones tales como Paranoid, álbum que logró cuatro certificaciones de platino de la RIAA. Han vendido más de 75 millones de discos en todo el mundo, incluidos 15 millones de copias sólo en los Estados Unidos.
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/R-1940017-1280844034.jpeg.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Iron Maiden</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif; ">Es una banda británica de heavy metal, fundada en 1975 por el bajista Steve Harris.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ironmaiden" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="ironmaiden" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Iron Maiden</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/R-1940017-1280844034.jpeg.jpg" height="328px">Es considerada una de las bandas de Heavy Metal más importantes de todos los tiempos. Ha vendido más de 100 millones de discos en todo el mundo, a pesar de haber contado con poco apoyo de la radio y la televisión comercial durante la mayor parte de su carrera. Sin embargo, la banda basó su éxito en llegar directamente a los aficionados, grabando discos de alta calidad y realizando actuaciones en vivo consideradas de las mejores del género.
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/dio.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Dio</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Fue una banda fundada en Nueva York por el vocalista y compositor Dio en el año 1982.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dio" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="dio" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Dio</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/dio.jpg" height="328px">La agrupación nace después de que Ronnie abandonara Black Sabbath, llevándose consigo al baterista de la banda, Vinny Appice, quien había remplazado a Bill Ward durante la gira del disco Heaven and Hell (1980). A estos dos componentes se suman Vivian Campbell a la guitarra y Jimmy Bain, ex-Rainbow al igual que Dio, al bajo.
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/></div>
+        <div class="row justify-content-around" style="margin-top: 30px">
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/deeppurple.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Deep Purple</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Es una banda británica formada en Hertford, Reino Unido, en 1968.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deeppurple" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="deeppurple" tabindex="-1 " role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Deep Purple</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/deeppurple.jpg" height="328px">Es considerada una de las pioneras del hard rock y la principal influencia para el heavy metal junto a Led Zeppelin y Black Sabbath. Su música ha incorporado elementos del rock progresivo, rock sinfónico, rock psicodélico, blues rock y de la música clásica. Deep Purple ha vendido más de 120 millones de discos en todo el mundo.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/accept.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Accept</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Accept es una banda alemana de heavy metal fundada en Solingen en 1976.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Accept" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="Accept" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Accept</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/accept.jpg" height="328px">Accept es considerada como una de las mejores bandas de heavy metal de la primera mitad de los años ochenta, además es nombrado como uno de los principales contribuyentes del desarrollo del speed metal y uno de los grupos más influyentes para el thrash metal.
+                            </div>
+                            <div class="modal-footer ">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/scorpions.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Scorpions</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Es una banda alemana de heavy metal fundada en Hannover en 1965.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#scorpions" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="scorpions" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Scorpions</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/scorpions.jpg" height="328px">A lo largo de sus cincuenta años de carrera, han publicado decenas de álbumes de estudios, sencillos, álbumes en directo, recopilaciones y DVD en vivo. Además han recibido varios premios y condecoraciones, que los convierte en la banda de rock / heavy metal más exitosa de Alemania.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+        </div>
+
+    </div>
+    <div class="footer">
+        <h5 class="text" style="text-align: center; color: grey;">@Juan Pablo Urra 2018</h5>
+        <h6 style="text-align: center"><a href="https://twitter.com/O_J_I_T_O_S_HD" target="_blank">Twitter</a></h6>
+        <h6 class="text" style="text-align: center; color: grey; ">Contacto: jp.urra42@gmail.com</h6>
+    </div>
+</body>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+</script>
+
+</html>

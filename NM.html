@@ -1,0 +1,608 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Nu Metal</title>
+    <link rel="icon" type="image/jpg" href="IMG/icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Rubik" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(IMG/purple.jpg);
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .transparent {
+            background: rgba(1, 1, 1, 0.5);
+            padding-bottom: 35px;
+        }
+
+        .footer {
+            background-color: black;
+            background: rgb(1, 1, 1, 06);
+            padding-top: 13px;
+            padding-right: 20px;
+            padding-bottom: 13px;
+            padding-left: 20px;
+        }
+
+        #texto {
+            color: #ffffff;
+
+        }
+
+        .navbar {
+            background-color: #000000;
+        }
+
+        .navbar .navbar-brand {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-brand:hover,
+        .navbar .navbar-brand:focus {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-text {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-text a {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-text a:hover,
+        .navbar .navbar-text a:focus {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color: #ffffff;
+            border-radius: .25rem;
+            margin: 0 0.25em;
+        }
+
+        .navbar .navbar-nav .nav-link:not(.disabled):hover,
+        .navbar .navbar-nav .nav-link:not(.disabled):focus {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-nav .dropdown-menu {
+            background-color: #000000;
+            border-color: #4e0252;
+        }
+
+        .navbar .navbar-nav .dropdown-menu .dropdown-item {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+        .navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+        .navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+            color: #ffffff;
+            background-color: #4e0252;
+        }
+
+        .navbar .navbar-nav .dropdown-menu .dropdown-divider {
+            border-top-color: #4e0252;
+        }
+
+        .navbar .navbar-nav .nav-item.active .nav-link,
+        .navbar .navbar-nav .nav-item.active .nav-link:hover,
+        .navbar .navbar-nav .nav-item.active .nav-link:focus,
+        .navbar .navbar-nav .nav-item.show .nav-link,
+        .navbar .navbar-nav .nav-item.show .nav-link:hover,
+        .navbar .navbar-nav .nav-item.show .nav-link:focus {
+            color: #ffffff;
+            background-color: #4e0252;
+        }
+
+        .navbar .navbar-toggle {
+            border-color: #4e0252;
+        }
+
+        .navbar .navbar-toggle:hover,
+        .navbar .navbar-toggle:focus {
+            background-color: #4e0252;
+        }
+
+        .navbar .navbar-toggle .navbar-toggler-icon {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-collapse,
+        .navbar .navbar-form {
+            border-color: #ffffff;
+        }
+
+        .navbar .navbar-link {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-link:hover {
+            color: #ffffff;
+        }
+
+        @media (max-width: 575px) {
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        @media (max-width: 1199px) {
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+            color: #ffffff;
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+            color: #ffffff;
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+            color: #ffffff;
+            background-color: #4e0252;
+        }
+
+        .special-card {
+            background-color: rgba(245, 245, 245, 1);
+            opacity: .4;
+        }
+
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: #4e0252;
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+            /* Add a dark-grey background on hover */
+        }
+
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Subir</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-">
+        <a class="navbar-brand" href="index.html">
+        <img src="IMG/guitar2.png" height="40" width="70">
+    </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #4e0252; border-color: #4e0252; color: #ffffff; ">
+    <span class="navbar-toggler-icon" ></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="index.html">Inicio </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="HM.html">Heavy Metal </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="TM.html">Thrash Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="DM.html">Death Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="PM.html">Power Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="BM.html">Black Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="PrM.html">Progressive Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="SM.html">Symphonic Metal</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Josefin Sans', sans-serif">
+          Más
+        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item active" style="font-family: 'Josefin Sans', sans-serif" href="NM.html">Nu Metal<span class="sr-only">(current)</span></a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="MDM.html">Melodic Death Metal</a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="IM.html">Industrial Metal</a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="MC.html">Metal Core</a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="AM.html">Alternative Metal</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Festivales.html" style="font-family: 'Josefin Sans', sans-serif">Festivales</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Acerca.html" style="font-family: 'Josefin Sans', sans-serif">Acerca De</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#LoginAcceder" style="font-family: 'Josefin Sans', sans-serif; background-color: #4e0252; border-color: #4e0252">
+  Login
+</button>&nbsp;
+                </li>
+                <li class="nav-item active">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#LoginRegistro" style="font-family: 'Josefin Sans', sans-serif; background-color: #4e0252; border-color: #4e0252">
+  Registrarse
+</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="LoginAcceder" tabindex="-1" role="dialog" aria-labelledby="logintitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logintitle">Acceder</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">No compartiremos tu correo con nadie!.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" style="background-color: #4e0252; border-color: #4e0252">Entrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="LoginRegistro" tabindex="-1" role="dialog" aria-labelledby="logintitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logintitle">Registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+       <a href="#"> Acepto los terminos del servicio</a>
+      </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" style="background-color: #4e0252; border-color: #4e0252">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="transparent container">
+        <br/>
+        <p class="h1" id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Nu Metal</p>
+        <br/>
+    </div>
+    <div class="transparent container">
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <p id="texto" class="h4" style="font-family: 'Rubik', sans-serif;">
+                    El nu metal (también llamado nü-metal, new metal o aggro metal) es un género musical de fusión que combina elementos del heavy metal con otros géneros, como el hip hop, el grunge, el rock alternativo y el funk. El género tuvo éxito comercial a finales de 1990 y principios de 2000. La música nu metal enfatiza la atmósfera, el ritmo y la textura por encima de la melodía y la instrumentación. A menudo, las canciones de nu meta l usan riffs rítmicos y sincopados, tocados con distorsionadas guitarras eléctricas afinadas en rangos bajos, un bajo muy agresivo generalmente más fuerte que el sonido de la guitarra y algo de sonido industrial aplicado mediante un DJ.
+                </p><br/> <br/>
+            </div>
+            <div class="col-md-12 col-12">
+                <h3 id="texto">Video: Korn - Got the Life<br/></h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-12 embed-responsive embed-responsive-16by9">
+                <h4 class="text-center img-fluid"><iframe width="560" height="315" src="https://www.youtube.com/embed/hRn-Tizl1mM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></h4>
+            </div>
+            <div class="col-md-12 col-12" style="margin-top: 35px; margin-bottom: 15px; text-align: center;">
+                <h1 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Bandas Conocidas: </h1>
+            </div>
+        </div>
+        <!------Cards------->
+        <div class="row justify-content-between">
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/korn.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Korn</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Korn es una banda estadounidense de nu metal formada en 1993.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gs" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="gs" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Korn</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/korn.jpg" height="328px">El catálogo de la banda consiste de diez debuts consecutivos en el top ten del Billboard 200, incluyendo un álbum recopilatorio, Greatest Hits Vol.1, y su Korn The Path Of Totality décimo álbum de estudio, publicado el 06 de diciembre de 2011. Hasta la fecha, Korn ha vendido más de 60 millones de álbumes mundialmente, incluyendo 19,5 en los Estados Unidos, mientras que han obtenido siete nominaciones a los premios Grammy, dos de los cuales han ganado.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/limp.jpeg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Limp Bizkit</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif; ">Limp Bizkit es una banda estadounidense, formada en Florida, en 1994.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#g" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="g" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Limp Bizkit</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/limp.jpeg" height="328px">La banda saltó al estrellato en junio de 1999, cuando su segundo álbum de estudio, Significant Other, vendió cuatro millones de copias al final de ese año. Sin embargo, su gran éxito internacional llegó en 2000 con Chocolate Starfish and the Hotdog Flavored Water, que incluía el sencillo "Take a Look Around" y que formó parte de la banda sonora de la película Misión: Imposible II. La banda de Fred Durst logró romper su propio récord (establecido un año antes con su álbum anterior) tras despachar más de un millón de copias en su primera semana en venta y lograr el número 1 en Estados Unidos, Canadá y Reino Unido.
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/system.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">System of a Down</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Es una banda formada en Los Ángeles, California, en el año 1994.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Rhapsody" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="Rhapsody" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">System of a Down</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/system.jpg" height="328px">Son conocidos por realizar canciones en cuyas letras se manifiestan en contra del maltrato infantil, la violencia, la guerra, los genocidios, la pornografía, el machismo, el predominio de los intereses materialistas en la sociedad, las desigualdades sociales, físicas e ideológicas, la intolerancia o la discriminación, entre otros. Esta fórmula social y musical le ha acarreado, desde la publicación de su primer álbum en 1998, buenos resultados ante el público, que hizo de System of a Down un disco de platino.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/></div>
+        <div class="row justify-content-around" style="margin-top: 30px">
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/slipk.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Slipknot</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Es una banda estadounidense de metal alternativo formada en 1988.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sabaton" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="sabaton" tabindex="-1 " role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Slipknot</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/slipk.jpg" height="328px"> Los inicios de Slipknot se remontan al año 1992. La banda sufrió muchos cambios en su formación antes del lanzamiento de su primera demo Mate.Feed.Kill.Repeat en 1996, en el que el vocalista era Anders Colsefini. En 1999 la banda lanzó su exitoso debut homónimo con Corey Taylor como nuevo vocalista. Desde entonces, han publicado 5 álbumes de estudio: Slipknot (1999), Iowa (2001), Vol. 3: The Subliminal Verses (2004), All Hope Is Gone (2008), que debutó en la posición #1 dentro del Billboard 200 y .5: The Gray Chapter (2014) siendo este el segundo álbum de la banda en debutar en el número uno de Billboard 200, vendiendo 132.000 copias en su primera semana.. La banda ha lanzado tres DVD, incluyendo Disasterpieces, del cual se han vendido 3 millones de copias en Estados Unidos. Slipknot ha vendido más de 20 millones de álbumes en todo el mundo.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/linkin.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Linkin Park</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Es una banda estadounidense, formada en 1996.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#strat" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="strat" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Linkin Park</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/linkin.jpg" height="328px">En el 2000 el grupo lanzó su álbum debut titulado Hybrid Theory; de este se extrajeron los sencillos «Crawling», «Papercut», «In the End» y «One Step Closer»; los últimos dos, obtuvieron certificación de disco de oro en Australia. Hybrid Theory alcanzó el puesto número dos en el Billboard 200, fue el séptimo álbum más vendido de la década del 2000, y lo certificaron con disco de diamante en los Estados Unidos y múltiple disco de platino en Europa. El cuarto sencillo del álbum, «In the End», alcanzó su mejor posición en el segundo puesto de la lista Billboard Hot 100, y se quedó en ella por treinta y ocho semanas.
+                            </div>
+                            <div class="modal-footer ">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/mush.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Mushroomhead</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Es una banda de metal industrial, formada en 1993.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#morbid" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="morbid" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Mushroomhead</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/mush.jpg" height="328px">En el año 1993, Mushroomhead se estableció como parte de un proyecto. Para diferenciarse de los miembros de sus otras bandas y para disipar cualquier malentendido sobre el sonido del grupo y contenido musical, Mushroomhead adoptó el uso de trajes, máscaras y seudónimos, considerándose como un grupo Industrial. Mushroomhead realizó su primer espectáculo en el año 1993, presentándose días después en conjunto con GWAR, una banda musicalmente establecida en el momento. En 1995, el octeto lanzó su auto-financiado álbum debut, titulado Mushroomhead, a través de su compañía discográfica, "Filthy Hands Co." (también conocida "Mushroomhead Co."). Con el pasar del tiempo, Mushroomhead se transformó en una prioridad para sus integrantes, llevando a la disolución de sus bandas originales. Debido a esto, durante los años 90, la formación vio muchos cambios, pero aun así la banda continuó activa, lanzando música y ganando seguidores de culto. En 1996, Mushroomhead lanza su segundo trabajo, con el nombre de Superbuick. En él, se nota un sonido más alternativo y al Nu metal con voces ligadas al género rapcore. Después de haber lanzado este álbum decidieron dar una gira en Estados Unidos y Canadá. En 1999, la banda realiza su tercer álbum llamado M3. Este trabajo sería el último trabajo auto financiado por la banda.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+        </div>
+
+    </div>
+    <div class="footer">
+        <h5 class="text" style="text-align: center; color: grey;">@Juan Pablo Urra 2018</h5>
+        <h6 style="text-align: center"><a href="https://twitter.com/O_J_I_T_O_S_HD" target="_blank">Twitter</a></h6>
+        <h6 class="text" style="text-align: center; color: grey; ">Contacto: jp.urra42@gmail.com</h6>
+    </div>
+</body>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+</script>
+
+</html>

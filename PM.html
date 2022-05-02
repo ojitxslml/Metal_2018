@@ -1,0 +1,608 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Power Metal</title>
+    <link rel="icon" type="image/jpg" href="IMG/icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Rubik" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(IMG/purple.jpg);
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .transparent {
+            background: rgba(1, 1, 1, 0.5);
+            padding-bottom: 35px;
+        }
+
+        .footer {
+            background-color: black;
+            background: rgb(1, 1, 1, 06);
+            padding-top: 13px;
+            padding-right: 20px;
+            padding-bottom: 13px;
+            padding-left: 20px;
+        }
+
+        #texto {
+            color: #ffffff;
+
+        }
+
+        .navbar {
+            background-color: #000000;
+        }
+
+        .navbar .navbar-brand {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-brand:hover,
+        .navbar .navbar-brand:focus {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-text {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-text a {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-text a:hover,
+        .navbar .navbar-text a:focus {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color: #ffffff;
+            border-radius: .25rem;
+            margin: 0 0.25em;
+        }
+
+        .navbar .navbar-nav .nav-link:not(.disabled):hover,
+        .navbar .navbar-nav .nav-link:not(.disabled):focus {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-nav .dropdown-menu {
+            background-color: #000000;
+            border-color: #4e0252;
+        }
+
+        .navbar .navbar-nav .dropdown-menu .dropdown-item {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+        .navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+        .navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+            color: #ffffff;
+            background-color: #4e0252;
+        }
+
+        .navbar .navbar-nav .dropdown-menu .dropdown-divider {
+            border-top-color: #4e0252;
+        }
+
+        .navbar .navbar-nav .nav-item.active .nav-link,
+        .navbar .navbar-nav .nav-item.active .nav-link:hover,
+        .navbar .navbar-nav .nav-item.active .nav-link:focus,
+        .navbar .navbar-nav .nav-item.show .nav-link,
+        .navbar .navbar-nav .nav-item.show .nav-link:hover,
+        .navbar .navbar-nav .nav-item.show .nav-link:focus {
+            color: #ffffff;
+            background-color: #4e0252;
+        }
+
+        .navbar .navbar-toggle {
+            border-color: #4e0252;
+        }
+
+        .navbar .navbar-toggle:hover,
+        .navbar .navbar-toggle:focus {
+            background-color: #4e0252;
+        }
+
+        .navbar .navbar-toggle .navbar-toggler-icon {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-collapse,
+        .navbar .navbar-form {
+            border-color: #ffffff;
+        }
+
+        .navbar .navbar-link {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-link:hover {
+            color: #ffffff;
+        }
+
+        @media (max-width: 575px) {
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        @media (max-width: 1199px) {
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #ffffff;
+            }
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #ffffff;
+            }
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #ffffff;
+                background-color: #4e0252;
+            }
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+            color: #ffffff;
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+            color: #ffffff;
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+            color: #ffffff;
+            background-color: #4e0252;
+        }
+
+        .special-card {
+            background-color: rgba(245, 245, 245, 1);
+            opacity: .4;
+        }
+
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: #4e0252;
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+            /* Add a dark-grey background on hover */
+        }
+
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Subir</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-">
+        <a class="navbar-brand" href="index.html">
+        <img src="IMG/guitar2.png" height="40" width="70">
+    </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #4e0252; border-color: #4e0252; color: #ffffff; ">
+    <span class="navbar-toggler-icon" ></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="index.html">Inicio </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="HM.html">Heavy Metal </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="TM.html">Thrash Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="DM.html">Death Metal</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="PM.html">Power Metal<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="BM.html">Black Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="PrM.html">Progressive Metal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: 'Josefin Sans', sans-serif" href="SM.html">Symphonic Metal</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Josefin Sans', sans-serif">
+          Más
+        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="NM.html">Nu Metal</a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="MDM.html">Melodic Death Metal</a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="IM.html">Industrial Metal</a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="MC.html">Metal Core</a>
+                        <a class="dropdown-item" style="font-family: 'Josefin Sans', sans-serif" href="AM.html">Alternative Metal</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Festivales.html" style="font-family: 'Josefin Sans', sans-serif">Festivales</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Acerca.html" style="font-family: 'Josefin Sans', sans-serif">Acerca De</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#LoginAcceder" style="font-family: 'Josefin Sans', sans-serif; background-color: #4e0252; border-color: #4e0252">
+  Login
+</button>&nbsp;
+                </li>
+                <li class="nav-item active">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#LoginRegistro" style="font-family: 'Josefin Sans', sans-serif; background-color: #4e0252; border-color: #4e0252">
+  Registrarse
+</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="LoginAcceder" tabindex="-1" role="dialog" aria-labelledby="logintitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logintitle">Acceder</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">No compartiremos tu correo con nadie!.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" style="background-color: #4e0252; border-color: #4e0252">Entrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="LoginRegistro" tabindex="-1" role="dialog" aria-labelledby="logintitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logintitle">Registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+       <a href="#"> Acepto los terminos del servicio</a>
+      </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" style="background-color: #4e0252; border-color: #4e0252">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="transparent container">
+        <br/>
+        <p class="h1" id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Power Metal</p>
+        <br/>
+    </div>
+    <div class="transparent container">
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <p id="texto" class="h4" style="font-family: 'Rubik', sans-serif;">
+                    El power metal es un subgénero del heavy metal que combina elementos del metal tradicional con metal neoclásico. Forma parte de una de las vertientes del speed metal. A diferencia del thrash metal (otra variante del speed metal) el power metal bien definido se concentra en la velocidad, los arreglos melódicos y la técnica instrumental. Las bandas de Power metal generalmente tienen canciones que parecen himnos, con melodía y fuertes coros épicos, creando así un sonido teatral, dramático y emocionalmente poderoso. En el power metal se reconocen dos grandes vertientes o variantes del mismo: la vertiente europea y la estadounidense. La europea se caracteriza por tener un sonido rápido y más melódico. La estadounidense, tiene como característica principal la potencia en sus riffs y batería (siendo a veces confundido con el thrash metal). A diferencia del europeo, generalmente su música no usa elementos sinfónicos ni teclados.
+                </p><br/> <br/>
+            </div>
+            <div class="col-md-12 col-12">
+                <h3 id="texto">Video: Sonata Arctica - San Sebastian<br/></h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-12 embed-responsive embed-responsive-16by9">
+                <h4 class="text-center img-fluid"><iframe width="560" height="315" src="https://www.youtube.com/embed/k0quXwCCa0k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></h4>
+            </div>
+            <div class="col-md-12 col-12" style="margin-top: 35px; margin-bottom: 15px; text-align: center;">
+                <h1 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Bandas Conocidas: </h1>
+            </div>
+        </div>
+        <!------Cards------->
+        <div class="row justify-content-between">
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/dragonforce.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Dragonforce</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Es una banda británica de power metal formada en el año 1999, en Londres, Inglaterra.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dragonforce" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="dragonforce" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Dragonforce</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/dragonforce.jpg" height="328px">Compuesta por músicos de China, Reino Unido, Italia, Francia y Ucrania. Explotan el lado épico y fantástico del power metal agregándole un ritmo mucho más rápido, mezclando elementos poco usuales.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/sonataarctica.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Sonata Arctica</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif; ">Sonata Arctica es una banda finlandesa de Power Metal formada en Kemi en 1996.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sonata" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="sonata" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Sonata Arctica</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/sonataarctica.jpg" height="328px">En sus inicios tocaban canciones fuertemente influidas por el género hard rock, las cuales no tenían mucho que ver con el Power Metal. Al principio de su carrera, grabaron tres demos que nunca fueron enviados a ningún sello discográfico - Friend 'till The End, Agre Pamppers y PeaceMaker.
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/rhapsody.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Rhapsody of Fire</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Es una banda italiana de power metal sinfónico formada en Trieste, en 1993. </p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Rhapsody" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="Rhapsody" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Rhapsody of Fire</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/rhapsody.jpg" height="328px"> Su primer nombre fue Thundercross, con el que sacaron un EP. Posteriormente cambiaron su nombre a «Rhapsody», con el cual serían mundialmente conocidos, para finalmente en el 2006 y, debido a problemas legales, modificar su nombre a «Rhapsody of Fire». Rhapsody se ha caracterizado por ser una banda pionera e innovadora y creadora de su propio estilo musical, en donde se marcan en cada una de sus canciones grandes arreglos orquestales, guitarras virtuosas que se pueden diferenciar fácilmente de cualquier otra banda, siempre bien acompañados de un teclado y bajo bien elaborados, sin olvidar la voz de Fabio Lione, que demuestra una gran destreza vocal efectuando estilos vocales desde un tenor de ópera hasta incluso voz gutural.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/></div>
+        <div class="row justify-content-around" style="margin-top: 30px">
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/sabaton.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Sabaton</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Sabaton es una banda sueca de power metal formada en 1999 en la ciudad de Falun.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sabaton" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="sabaton" tabindex="-1 " role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Sabaton</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/sabaton.jpg" height="328px"> El grupo se caracteriza por su estética militarizada y sus letras de contenido histórico-bélico. Incluso su nombre proviene de la parte de la armadura medieval que cubre el empeine del pie y que en español se llama escarpe. Actualmente Sabaton tiene su propio festival que se celebra en otoño y su propio crucero-festival que se celebra en invierno. Paradox Interactive utiliza a Sabaton para promocionar sus videojuegos.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/stratovarius.jpg" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Stratovarius</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Es un grupo finlandés de power metal melódico, fundado en 1984 en Helsinki</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#strat" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="strat" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Stratovarius</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/stratovarius.jpg" height="328px">A partir de 1986 se le ha conocido como Stratovarius (término inventado por Lassila que fusiona dos instrumentos musicales: Stradivarius, instrumentos de cuerda (como los violines) altamente apreciados por los músicos; y Stratocaster, modelo de guitarra eléctrica de la marca Fender). Stratovarius es una de las pioneras del power metal, el metal sinfónico y el metal melódico.
+                            </div>
+                            <div class="modal-footer ">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+            <div class="col-md-4 col-12 card" style="width: 20px; background-color: transparent; margin-top: 10px; border-color: transparent">
+                <img class="card-img-top img-fluid" src="IMG/helloween.png" alt="Card image cap" height="348px">
+                <h5 id="texto" style="text-align: center; font-family: 'Josefin Sans', sans-serif">Helloween</h5>
+                <p class="card-text" id="texto" style="font-family: 'Rubik', sans-serif;">Es una banda alemana de Power Metal fundada en Hamburgo, Alemania de 1978.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#morbid" style="background-color: #4e0252; border-color: #4e0252">Ver Mas</button>
+                <div class="modal fade" id="morbid" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Helloween</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body"><img class="card-img-top" src="IMG/helloween.png" height="328px">La banda comenzó en 1978 con el nombre de Gentry, y después de varios cambios de denominación llegaron al nombre de Helloween en 1983 por decisión de los fundadores Kai Hansen y Piet Sielck. Se los considera padres del Power metal por las influencias de sus trabajos, sin embargo, bandas anteriores realizaron temas musicales que podrían ser considerados como los primeros del género; aun así Helloween es considerado como un precursor importante del género. En Alemania, es una de las bandas mas oídas en la radio. Desde su creación Helloween ha vendido más de 10 millones de álbumes alrededor del mundo.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <br/>
+        </div>
+
+    </div>
+    <div class="footer">
+        <h5 class="text" style="text-align: center; color: grey;">@Juan Pablo Urra 2018</h5>
+        <h6 style="text-align: center"><a href="https://twitter.com/O_J_I_T_O_S_HD" target="_blank">Twitter</a></h6>
+        <h6 class="text" style="text-align: center; color: grey; ">Contacto: jp.urra42@gmail.com</h6>
+    </div>
+</body>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+</script>
+
+</html>
